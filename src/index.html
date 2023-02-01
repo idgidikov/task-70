@@ -15,7 +15,7 @@
     <button class="button">Boom?</button>
   </div>
   <script>
-    document.querySelector("div.main").innerHTML +=  `<div class="image">
+    document.querySelector("div.main").innerHTML =  `<div class="image">
       <img src="https://images.pexels.com/photos/1918246/pexels-photo-1918246.jpeg" alt="">
     </div>`
     
@@ -26,7 +26,7 @@
     image.addEventListener("click", doubleImage);
 
     function doubleImage() {
-      image.style.transform = "scale(2,2)";
+      image.style.transform = "scale(2)";
       // image.style.transition = "transform 0.25s ease";
 
     }
