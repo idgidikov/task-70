@@ -24,13 +24,15 @@
     <script>
       const image = document.querySelector(`div.image`)
       const child = image.firstElementChild
-      const width = child.getAttribute("width")
-      const height = child.getAttribute("height")
-      image.addEventListener("click",function(){
+      // const width = child.getAttribute("width")
+      // const height = child.getAttribute("height")
+      image.addEventListener("click", doubleImage );
+
+      function doubleImage() {
+        child.style.transform = "scale(2)";
+        child.style.transition = "transform 0.25s ease";
         
-        child.setAttribute("width",+width * 2)
-        child.setAttribute("height",+height *2)
-      })
+      }
       
       
     </script>
