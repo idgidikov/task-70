@@ -11,8 +11,28 @@
   </head>
   <body>
     <div class="main">
+      <div class="image">
+        <img width="500"
+        height="700"
+        
+        
+        src="https://images.pexels.com/photos/1918246/pexels-photo-1918246.jpeg" alt="">
+      </div>
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
+    <script>
+      const image = document.querySelector(`div.image`)
+      const child = image.firstElementChild
+      const width = child.getAttribute("width")
+      const height = child.getAttribute("height")
+      image.addEventListener("click",function(){
+        
+        child.setAttribute("width",+width * 2)
+        child.setAttribute("height",+height *2)
+      })
+      
+      
+    </script>
   </body>
 </html>
