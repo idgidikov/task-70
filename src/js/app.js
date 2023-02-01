@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
   main.appendChild(image);
 
   const btn = document.querySelector(".image")
-  btn.addEventListener("click", doubleImage);
+  btn.addEventListener("click", doubleImage, true);
 
   function doubleImage() {
     image.style.transform = "scale(2)";
